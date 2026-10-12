@@ -25,12 +25,10 @@ explains what the app does with your Google data when you turn on Google Drive s
 <h2>What the app accesses</h2>
 <ul>
   <li><strong>Google Drive, limited to files the app creates</strong> (scope
-    <code>drive.file</code>). The app creates one file, <code>vault.cmv</code>, in a
-    "Credentials Manager" folder in your Drive, and reads and updates only that file. It
-    cannot see any other file in your Drive.</li>
-  <li><strong>Your Google account email address</strong> (scopes <code>openid</code> and
-    <code>userinfo.email</code>), shown in the app's settings so you can see which account
-    is connected.</li>
+    <code>drive.file</code>, the only scope the app requests). The app creates one file,
+    <code>vault.cmv</code>, in a "Credentials Manager" folder in your Drive, and reads and
+    updates only that file. It cannot see any other file in your Drive, your email address,
+    or your profile.</li>
 </ul>
 
 <h2>How your data is protected</h2>
