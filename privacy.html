@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credentials Manager - Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 32px; }
+  .updated { opacity: 0.7; margin-top: 0; }
+  code { font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>Credentials Manager - Privacy Policy</h1>
+<p class="updated">Last updated: 12 October 2026</p>
+
+<p>Credentials Manager is a macOS app that keeps tokens, API keys, and passwords in an
+encrypted vault on your Mac. It has no server and no account system of its own. This page
+explains what the app does with your Google data when you turn on Google Drive sync.</p>
+
+<h2>What the app accesses</h2>
+<ul>
+  <li><strong>Google Drive, limited to files the app creates</strong> (scope
+    <code>drive.file</code>). The app creates one file, <code>vault.cmv</code>, in a
+    "Credentials Manager" folder in your Drive, and reads and updates only that file. It
+    cannot see any other file in your Drive.</li>
+  <li><strong>Your Google account email address</strong> (scopes <code>openid</code> and
+    <code>userinfo.email</code>), shown in the app's settings so you can see which account
+    is connected.</li>
+</ul>
+
+<h2>How your data is protected</h2>
+<ul>
+  <li>The vault is encrypted on your Mac (AES-256-GCM) before it is written to disk or
+    uploaded. The file in your Drive contains only ciphertext; neither Google nor the
+    developer can read your credentials.</li>
+  <li>The Google sign-in token is stored in the macOS Keychain on your Mac only. It is never
+    uploaded, never stored in the vault, and never sent anywhere except to Google to
+    authorize Drive requests.</li>
+</ul>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li>No analytics, tracking, advertising, or crash reporting.</li>
+  <li>No data is sent to the developer or to any third party. The app talks only to Google's
+    sign-in and Drive services.</li>
+  <li>Your data is never sold, shared, or used for any purpose other than syncing your own
+    vault between your own Macs.</li>
+</ul>
+
+<h2>Google API Services User Data Policy</h2>
+<p>Credentials Manager's use and transfer of information received from Google APIs adheres to
+the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access and data</h2>
+<ul>
+  <li>Sign out in the app's settings, or revoke access at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  <li>Delete the "Credentials Manager" folder from your Google Drive to remove the encrypted
+    copy. The vault on your Mac is unaffected.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Questions: <a href="mailto:lklong20071997@gmail.com">lklong20071997@gmail.com</a></p>
+</body>
+</html>
